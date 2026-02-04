@@ -194,7 +194,7 @@ export interface BrokerProvider {
 
   getClock(): Promise<MarketClock>;
   getCalendar(start: string, end: string): Promise<MarketDay[]>;
-  
+
   getAsset(symbol: string): Promise<Asset | null>;
 }
 
